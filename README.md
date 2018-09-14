@@ -10,7 +10,7 @@ In this article I am using _Chocolatey_ script to create a typical ***Java Devel
 ## Steps
 1. [Install _Chocolatey_](https://chocolatey.org/install)
 
-2. Verify the installation is successful by typing `choco -?` in a Windows command window.
+2. Verify the installation is successful by typing `choco -?` in a Windows Command window.
 
 3. Open a Command window using the _Run As Administrator_ option.
 
@@ -30,8 +30,15 @@ In this article I am using _Chocolatey_ script to create a typical ***Java Devel
     choco install postman
     choco install intellijidea-community
     ```
+    ![setup script start](setup-jde-start.jpg)  
+    Start script execution
+    
+    ![setup script start](setup-jde-start.jpg) 
+    Complete script execution
+    
 4. Verify setup on the Windows machine
   - screenshots of `C:\ProgramData\chocolatey`
+  
 
 ## Notes
 1. `C:\ProgramData\chocolatey` contains the `choco.exe`.
