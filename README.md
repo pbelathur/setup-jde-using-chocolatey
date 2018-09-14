@@ -31,15 +31,11 @@ In this article I am using _Chocolatey_ script to create a typical ***Java Devel
     choco install intellijidea-community
     ```
     ![setup script start](setup-jde-start.JPG)  
-    Start script execution
+    ***Script execution start***
     
     ![setup script end](setup-jde-end.JPG) 
-    Complete script execution
+    ***Script execution complete***
     
-4. Verify setup on the Windows machine
-  - screenshots of `C:\ProgramData\chocolatey`
-  
-
 ## Notes
 1. `C:\ProgramData\chocolatey` contains the `choco.exe`.
 
