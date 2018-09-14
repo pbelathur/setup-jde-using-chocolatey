@@ -31,11 +31,12 @@ This script is recommended to be under version control and used to setup consist
     choco install postman
     choco install intellijidea-community
     ```
-    ![setup script start](setup-jde-start.JPG)  
-    ***Script execution start***
     
-    ![setup script end](setup-jde-end.JPG) 
+    ***Script execution start***
+    ![setup script start](setup-jde-start.JPG)  
+   
     ***Script execution complete***
+    ![setup script end](setup-jde-end.JPG) 
     
 ## Notes
 1. `C:\ProgramData\chocolatey` contains the `choco.exe`.
