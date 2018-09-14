@@ -12,7 +12,9 @@ In this article I am using _Chocolatey_ script to create a typical ***Java Devel
 
 2. Verify the installation is successful by typing `choco -?` in a Windows command window.
 
-3. Run `setup-jde.cmd` in a command window to install the runtime (_JDK8_), build tools (_maven, gradle_), SCM (_git_), utilities (_putty, curl, postman_) and IDE (_IntelliJ community edition_) on the Windows machine.
+3. Open a Command window using the _Run As Administrator_ option.
+
+4. Run `setup-jde.cmd` in the Command window to install the runtime (_JDK8_), build tools (_maven, gradle_), SCM (_git_), utilities (_putty, curl, postman_) and the IDE (_IntelliJ community edition_) on the developer's Windows computer.
 
     `setup-jde.cmd`
 
@@ -38,8 +40,5 @@ In this article I am using _Chocolatey_ script to create a typical ***Java Devel
     -  `operation` is `install`,`uninstall` or `update`
     -  `application-name` is obtained from `https://chocolatey.org/packages`
 
-
-3. The _application_ installed using `choco install` will appear in `C:\ProgramData`
-
-3. `https://chocolatey.org/packages` contains the details of the packages (_applications_) that can be installed using `choco install`
+3. `https://chocolatey.org/packages` contains the details of the applications that can be installed using `choco install`
 
