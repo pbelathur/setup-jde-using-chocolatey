@@ -47,5 +47,5 @@ This script is recommended to be under version control and used to setup consist
 
 3. `https://chocolatey.org/packages` contains the details of the applications that can be installed using `choco install`
 
-4. The `uninstall-jde.cmd` is used for uninstalling all applications that were installed using the `setup-jde.cmd`
+4. The `uninstall-jde.cmd` is used for uninstalling all the applications that were installed using the `setup-jde.cmd`
 
