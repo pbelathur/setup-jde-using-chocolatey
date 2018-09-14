@@ -2,7 +2,7 @@
 Setup Java Developer Environment using Chocolatey
 
 ## What is Chocolatey ?
-***Chocolatey*** is a _package manager_ for Windows similar to `Homebrew` on the MacOS, with features to install, upgrade and uninstall Windows applications.
+***Chocolatey*** is a _package manager_ for Windows similar to `Homebrew` on the MacOS, with features to _install_, _upgrade_ and _uninstall_ Windows applications.
 ***Chocolatey*** works with all the existing Windows software installation technologies, runtime binaries and zip archives. It supports unattended and scripted package management with automatic configuration of environment/PATH.
 
 In this article I am using _Chocolatey_ script to create a typical ***Java Developer Environment*** on a Windows machine.
@@ -14,21 +14,21 @@ In this article I am using _Chocolatey_ script to create a typical ***Java Devel
 
 3. Run `setup-jde.cmd` in a command window to install the runtime (_JDK8_), build tools (_maven, gradle_), SCM (_git_), testing (_curl, postman_), utilities (_atom, 7Zip, putty, DB Visualizer_) and IDE (_IntelliJ community edition_) on the Windows machine.
 
-  `setup-jde.cmd`
+    `setup-jde.cmd`
 
-  ```
-  choco install jdk8
-  choco install maven
-  choco install gradle
-  choco install git
-  choco install atom
-  choco install putty
-  choco install curl
-  choco install postman
-  choco install db-visualizer
-  choco install 7zip
-  choco install intellijidea-community
-  ```
+    ```
+    choco install jdk8
+    choco install maven
+    choco install gradle
+    choco install git
+    choco install atom
+    choco install putty
+    choco install curl
+    choco install postman
+    choco install db-visualizer
+    choco install 7zip
+    choco install intellijidea-community
+    ```
 4. Verify setup on the Windows machine
   - screenshots of `C:\ProgramData\chocolatey`
 
