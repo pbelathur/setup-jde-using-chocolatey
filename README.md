@@ -30,10 +30,10 @@ In this article I am using _Chocolatey_ script to create a typical ***Java Devel
     choco install postman
     choco install intellijidea-community
     ```
-    ![setup script start](setup-jde-start.jpg)  
+    ![setup script start](setup-jde-start.JPG)  
     Start script execution
     
-    ![setup script start](setup-jde-start.jpg) 
+    ![setup script end](setup-jde-end.JPG) 
     Complete script execution
     
 4. Verify setup on the Windows machine
