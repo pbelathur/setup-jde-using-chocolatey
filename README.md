@@ -37,7 +37,7 @@ In this article I am using _Chocolatey_ script to create a typical ***Java Devel
 1. `C:\ProgramData\chocolatey` contains the `choco.exe`.
 
 2. Command syntax: `choco <operation> <application-name>`
-    -  `operation` is `install`,`uninstall` or `update`
+    -  `operation` is `install`,`uninstall` or `upgrade`
     -  `application-name` is obtained from `https://chocolatey.org/packages`
 
 3. `https://chocolatey.org/packages` contains the details of the applications that can be installed using `choco install`
