@@ -12,21 +12,20 @@ In this article I am using _Chocolatey_ script to create a typical ***Java Devel
 
 2. Verify the installation is successful by typing `choco -?` in a Windows command window.
 
-3. Run `setup-jde.cmd` in a command window to install the runtime (_JDK8_), build tools (_maven, gradle_), SCM (_git_), testing (_curl, postman_), utilities (_atom, 7Zip, putty, DB Visualizer_) and IDE (_IntelliJ community edition_) on the Windows machine.
+3. Run `setup-jde.cmd` in a command window to install the runtime (_JDK8_), build tools (_maven, gradle_), SCM (_git_), utilities (_putty, curl, postman_) and IDE (_IntelliJ community edition_) on the Windows machine.
 
     `setup-jde.cmd`
 
     ```
+    choco feature enable -n allowGlobalConfirmation
+
     choco install jdk8
     choco install maven
     choco install gradle
-    choco install git
-    choco install atom
-    choco install putty
+    choco install git.install
+    choco install putty.install
     choco install curl
     choco install postman
-    choco install db-visualizer
-    choco install 7zip
     choco install intellijidea-community
     ```
 4. Verify setup on the Windows machine
