@@ -1,12 +1,12 @@
 # setup-jde-using-chocolatey
 Setup Java Developer Environment on Windows using Chocolatey
 
+In this article I am using _Chocolatey_ scripts to create a typical ***Java Developer Environment*** on a Windows machine.  
+These scripts are recommended to be under version control and used to setup consistent developer environments.
+
 ## What is Chocolatey ?
 ***Chocolatey*** is a _package manager_ for Windows similar to `Homebrew` on the MacOS, with features to _install_, _upgrade_ and _uninstall_ Windows applications.
 ***Chocolatey*** works with all the existing Windows software installation technologies, runtime binaries and zip archives. It supports unattended and scripted package management with automatic configuration of environment/PATH.
-
-In this article I am using _Chocolatey_ scripts to create a typical ***Java Developer Environment*** on a Windows machine.  
-These scripts are recommended to be under version control and used to setup consistent developer environments.
 
 ## Steps
 1. Install Chocolatey  
