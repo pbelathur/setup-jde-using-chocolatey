@@ -9,13 +9,12 @@ In this article I am using _Chocolatey_ script to create a typical ***Java Devel
 This script is recommended to be under version control and used to setup consistent developer environments for a team.
 
 ## Steps
-1. [Install _Chocolatey_](https://chocolatey.org/install)
+1. Open a Command window using the _Run As Administrator_ option and execute [setup-chocolatey.cmd](https://github.com/pbelathur/setup-jde-using-chocolatey/blob/master/setup-chocolatey.cmd). 
 
-2. Verify the installation is successful by typing `choco -?` in a Windows Command window.
+2. Verify the installation is successful by typing `choco -?` in a Windows Command window.  
+   ![setup script start](verify-chocolatey.PNG)  
 
-3. Open a Command window using the _Run As Administrator_ option.
-
-4. Run `setup-jde.cmd` in the Command window to install the runtime (_JDK8_), build tools (_maven, gradle_), SCM (_git_), utilities (_putty, curl, postman_) and the IDE (_IntelliJ community edition_) on the developer's Windows computer.
+3. Run `setup-jde.cmd` in the same Command window to install the runtime (_JDK8_), build tools (_maven, gradle_), SCM (_git_), utilities (_putty, curl, postman_) and the IDE (_IntelliJ community edition_) on the developer's Windows computer.
 
     `setup-jde.cmd`
 
@@ -33,19 +32,22 @@ This script is recommended to be under version control and used to setup consist
     ```
     
     ***Script execution start***
-    ![setup script start](setup-jde-start.JPG)  
+    ![setup-jde-1](setup-jde-1.PNG)  
    
     ***Script execution complete***
-    ![setup script end](setup-jde-end.JPG) 
+    ![setup-jde-2](setup-jde-2.PNG) 
     
 ## Notes
-1. `C:\ProgramData\chocolatey` contains the `choco.exe`.
 
-2. Command syntax: `choco <operation> <application-name>`
+1. [Chocolatey_Installation Details](https://chocolatey.org/install)
+
+2. `C:\ProgramData\chocolatey` contains the `choco.exe`.
+
+3. Command syntax: `choco <operation> <application-name>`
     -  `operation` is `install`,`uninstall` or `upgrade`
     -  `application-name` is obtained from `https://chocolatey.org/packages`
 
-3. `https://chocolatey.org/packages` contains the details of the applications that can be installed using `choco install`
+4. `https://chocolatey.org/packages` contains the details of the applications that can be installed using `choco install`
 
-4. The `uninstall-jde.cmd` is used for uninstalling all the applications that were installed using the `setup-jde.cmd`
+5. The `uninstall-jde.cmd` is used for uninstalling all the applications that were installed using the `setup-jde.cmd`
 
