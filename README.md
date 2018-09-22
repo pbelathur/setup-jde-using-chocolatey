@@ -11,7 +11,7 @@ This script is recommended to be under version control and used to setup consist
 ## Steps
 1. Open a Command window using the _Run As Administrator_ option and execute [setup-chocolatey.cmd](https://github.com/pbelathur/setup-jde-using-chocolatey/blob/master/setup-chocolatey.cmd). 
 
-2. Verify the installation is successful by typing `choco -?` in a Windows Command window.  
+2. Verify the installation is successful by typing `choco` in a Windows Command window.  
    ![setup script start](verify-chocolatey.PNG)  
 
 3. Run `setup-jde.cmd` in the same Command window to install the runtime (_JDK8_), build tools (_maven, gradle_), SCM (_git_), utilities (_putty, curl, postman_) and the IDE (_IntelliJ community edition_) on the developer's Windows computer.
