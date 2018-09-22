@@ -1,6 +1,4 @@
-# Setup Java Developer Environment on Windows using Chocolatey
-Setup Java Developer Environment on Windows using Chocolatey
-
+# Setup Java Developer Environment using Chocolatey
 In this recipe I am using _Chocolatey_ scripts to create a typical ***Java Developer Environment*** on a Windows machine.  
 These scripts are recommended to be under version control and used to setup consistent developer environments.
 
