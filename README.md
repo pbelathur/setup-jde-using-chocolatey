@@ -1,7 +1,7 @@
 # setup-jde-using-chocolatey
 Setup Java Developer Environment on Windows using Chocolatey
 
-In this article I am using _Chocolatey_ scripts to create a typical ***Java Developer Environment*** on a Windows machine.  
+In this recipe I am using _Chocolatey_ scripts to create a typical ***Java Developer Environment*** on a Windows machine.  
 These scripts are recommended to be under version control and used to setup consistent developer environments.
 
 ## What is Chocolatey ?
