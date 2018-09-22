@@ -6,7 +6,7 @@ Setup Java Developer Environment on Windows using Chocolatey
 ***Chocolatey*** works with all the existing Windows software installation technologies, runtime binaries and zip archives. It supports unattended and scripted package management with automatic configuration of environment/PATH.
 
 In this article I am using _Chocolatey_ script to create a typical ***Java Developer Environment*** on a Windows machine.  
-This script is recommended to be under version control and used to setup consistent developer environments for a team.
+These scripts are recommended to be under version control and used to setup consistent developer environments.
 
 ## Steps
 1. Open a Command window using the _Run As Administrator_ option and execute [setup-chocolatey.cmd](https://github.com/pbelathur/setup-jde-using-chocolatey/blob/master/setup-chocolatey.cmd). 
@@ -14,7 +14,7 @@ This script is recommended to be under version control and used to setup consist
 2. Verify the installation is successful by typing `choco` in a Windows Command window.  
    ![setup script start](verify-chocolatey.PNG)  
 
-3. Run `setup-jde.cmd` in the same Command window to install the runtime (_JDK8_), build tools (_maven, gradle_), SCM (_git_), utilities (_putty, curl, postman_) and the IDE (_IntelliJ community edition_) on the developer's Windows computer.
+3. Run [setup-jde.cmd](https://github.com/pbelathur/setup-jde-using-chocolatey/blob/master/setup-jde.cmd) in the same Command window to install the runtime (_JDK8_), build tools (_maven, gradle_), SCM (_git_), utilities (_putty, curl, postman_) and the IDE (_IntelliJ community edition_) on the developer's Windows computer.
 
     `setup-jde.cmd`
 
@@ -49,5 +49,7 @@ This script is recommended to be under version control and used to setup consist
 
 4. `https://chocolatey.org/packages` contains the details of the applications that can be installed using `choco install`
 
-5. The `uninstall-jde.cmd` is used for uninstalling all the applications that were installed using the `setup-jde.cmd`
+5. The [uninstall-jde.cmd](https://github.com/pbelathur/setup-jde-using-chocolatey/blob/master/uninstall-jde.cmd) is used for uninstalling all the applications that were installed using the `setup-jde.cmd`
+
+6. Installation log: `C:\ProgramData\chocolatey\logs\chocolatey.log`
 
