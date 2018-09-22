@@ -49,7 +49,7 @@ These scripts are recommended to be under version control and used to setup cons
 
 4. `https://chocolatey.org/packages` contains the details of the applications that can be installed using `choco install`
 
-5. The [uninstall-jde.cmd](https://github.com/pbelathur/setup-jde-using-chocolatey/blob/master/uninstall-jde.cmd) is used to uninstall all the applications installed using [setup-chocolatey.cmd](https://github.com/pbelathur/setup-jde-using-chocolatey/blob/master/setup-chocolatey.cmd)
+5. The [uninstall-jde.cmd](https://github.com/pbelathur/setup-jde-using-chocolatey/blob/master/uninstall-jde.cmd) is used to uninstall all the applications installed using [setup-jde.cmd](https://github.com/pbelathur/setup-jde-using-chocolatey/blob/master/setup-jde.cmd)
 
 6. Installation log: `C:\ProgramData\chocolatey\logs\chocolatey.log`
 
