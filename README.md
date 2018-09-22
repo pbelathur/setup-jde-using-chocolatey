@@ -9,7 +9,8 @@ In this article I am using _Chocolatey_ scripts to create a typical ***Java Deve
 These scripts are recommended to be under version control and used to setup consistent developer environments.
 
 ## Steps
-1. Open a Command window using the _Run As Administrator_ option and execute [setup-chocolatey.cmd](https://github.com/pbelathur/setup-jde-using-chocolatey/blob/master/setup-chocolatey.cmd). 
+1. Install Chocolatey  
+   Open a Command window using the _Run As Administrator_ option and execute [setup-chocolatey.cmd](https://github.com/pbelathur/setup-jde-using-chocolatey/blob/master/setup-chocolatey.cmd). 
 
 2. Verify the installation is successful by typing `choco` in a Windows Command window.  
    ![setup script start](verify-chocolatey.PNG)  
