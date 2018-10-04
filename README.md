@@ -1,10 +1,10 @@
 # Setup Java Developer Environment using Chocolatey
-I will be using _Chocolatey_ scripts to create a typical ***Java Developer Environment*** on a Windows machine.  
-These scripts are used to ***setup, update*** or ***teardown*** Java developer environments on a Windows machine.
+## What is [Chocolatey](https://chocolatey.org/) ?
+***Chocolatey*** is a _package manager_ for Windows similar to **_Homebrew_** on the MacOS, with features to _install_, _configure_, _upgrade_ and _uninstall_ Windows applications.
+***Chocolatey*** works with all the existing Windows software installation technologies, runtime binaries and zip archives. It supports unattended and scripted package management with automatic configuration.
 
-## What is Chocolatey ?
-***Chocolatey*** is a _package manager_ for Windows similar to `Homebrew` on the MacOS, with features to _install_, _upgrade_ and _uninstall_ Windows applications.
-***Chocolatey*** works with all the existing Windows software installation technologies, runtime binaries and zip archives. It supports unattended and scripted package management with automatic configuration of environment/PATH.
+I will be using _Chocolatey_ scripts to create a typical ***Java Developer Environment*** on a Windows machine.  
+These scripts can be used to ***setup, update*** or ***teardown*** the Java developer environments on a Windows machine.
 
 ## Steps
 1. Install **Chocolatey**  
@@ -15,7 +15,7 @@ These scripts are used to ***setup, update*** or ***teardown*** Java developer e
 
 3. Run [setup-jde.cmd](https://github.com/pbelathur/setup-jde-using-chocolatey/blob/master/setup-jde.cmd) in the same command window to install the runtime (_jdk8_), build tools (_maven, gradle_), SCM (_git_) and utilities (_putty, curl, postman_, _IntelliJ community edition_) on the developer's Windows computer.
 
-    content of `setup-jde.cmd`
+    contents of the`setup-jde.cmd`
 
     ```
     choco feature enable -n allowGlobalConfirmation
@@ -35,6 +35,8 @@ These scripts are used to ***setup, update*** or ***teardown*** Java developer e
 
     ***Script execution complete***
     ![setup-jde-2](images/setup-jde-2.PNG)
+
+4. Verify the installed applications of the _Java Developer Environment_.
 
 ## Notes
 
