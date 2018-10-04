@@ -1,5 +1,5 @@
 # Setup Java Developer Environment using Chocolatey
-In this recipe I will be using _Chocolatey_ scripts to create a typical ***Java Developer Environment*** on a Windows machine.  
+I will be using _Chocolatey_ scripts to create a typical ***Java Developer Environment*** on a Windows machine.  
 These scripts are used to ***setup, update*** or ***teardown*** Java developer environments on a Windows machine.
 
 ## What is Chocolatey ?
@@ -7,15 +7,15 @@ These scripts are used to ***setup, update*** or ***teardown*** Java developer e
 ***Chocolatey*** works with all the existing Windows software installation technologies, runtime binaries and zip archives. It supports unattended and scripted package management with automatic configuration of environment/PATH.
 
 ## Steps
-1. Install Chocolatey  
-   Open a Command window using the _Run As Administrator_ option and execute [setup-chocolatey.cmd](https://github.com/pbelathur/setup-jde-using-chocolatey/blob/master/setup-chocolatey.cmd). 
+1. Install **Chocolatey**  
+   open a command window using the _Run As Administrator_ option and, execute [setup-chocolatey.cmd](https://github.com/pbelathur/setup-jde-using-chocolatey/blob/master/setup-chocolatey.cmd).
 
-2. Verify the installation is successful by typing `choco` in a Windows Command window.  
-   ![setup script start](verify-chocolatey.PNG)  
+2. Verify the installation is successful by typing `choco` in the command window.  
+   ![setup script start](images/verify-chocolatey.PNG)  
 
-3. Run [setup-jde.cmd](https://github.com/pbelathur/setup-jde-using-chocolatey/blob/master/setup-jde.cmd) in the same Command window to install the runtime (_JDK8_), build tools (_maven, gradle_), SCM (_git_), utilities (_putty, curl, postman_) and the IDE (_IntelliJ community edition_) on the developer's Windows computer.
+3. Run [setup-jde.cmd](https://github.com/pbelathur/setup-jde-using-chocolatey/blob/master/setup-jde.cmd) in the same command window to install the runtime (_jdk8_), build tools (_maven, gradle_), SCM (_git_) and utilities (_putty, curl, postman_, _IntelliJ community edition_) on the developer's Windows computer.
 
-    `setup-jde.cmd`
+    content of `setup-jde.cmd`
 
     ```
     choco feature enable -n allowGlobalConfirmation
@@ -29,13 +29,13 @@ These scripts are used to ***setup, update*** or ***teardown*** Java developer e
     choco install postman
     choco install intellijidea-community
     ```
-    
+
     ***Script execution start***
-    ![setup-jde-1](setup-jde-1.PNG)  
-   
+    ![setup-jde-1](images/setup-jde-1.PNG)  
+
     ***Script execution complete***
-    ![setup-jde-2](setup-jde-2.PNG) 
-    
+    ![setup-jde-2](images/setup-jde-2.PNG)
+
 ## Notes
 
 1. [Chocolatey Installation Details](https://chocolatey.org/install)
@@ -43,12 +43,11 @@ These scripts are used to ***setup, update*** or ***teardown*** Java developer e
 2. `C:\ProgramData\chocolatey` contains the `choco.exe`.
 
 3. Command syntax: `choco <operation> <application-name>`
-    -  `operation` is `install`,`uninstall` or `upgrade`
+    -  `operation` is `install` or `uninstall` or `upgrade`
     -  `application-name` is obtained from `https://chocolatey.org/packages`
 
 4. `https://chocolatey.org/packages` contains the details of the applications that can be installed using `choco install`
 
-5.  [uninstall-jde.cmd](https://github.com/pbelathur/setup-jde-using-chocolatey/blob/master/uninstall-jde.cmd) is used to uninstall all the applications installed using [setup-jde.cmd](https://github.com/pbelathur/setup-jde-using-chocolatey/blob/master/setup-jde.cmd)
+5.  [uninstall-jde.cmd](https://github.com/pbelathur/setup-jde-using-chocolatey/blob/master/uninstall-jde.cmd) is used to _teardown_ the Java Developer Environment.
 
 6. Installation log: `C:\ProgramData\chocolatey\logs\chocolatey.log`
-
