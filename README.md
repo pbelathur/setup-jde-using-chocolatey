@@ -13,21 +13,14 @@ These scripts can be used to ***setup, update*** or ***teardown*** the Java deve
 2. Verify the installation is successful by typing `choco` in the command window.  
    ![setup script start](images/verify-chocolatey.PNG)  
 
-3. Run [setup-jde.cmd](https://github.com/pbelathur/setup-jde-using-chocolatey/blob/master/setup-jde.cmd) in the same command window to install the runtime (_jdk8_), build tools (_maven, gradle_), SCM (_git_) and utilities (_putty, curl, postman_, _IntelliJ community edition_) on the developer's Windows computer.
+3. Run [setup-jde.cmd](https://github.com/pbelathur/setup-jde-using-chocolatey/blob/master/setup-jde.cmd) in the same command window to install the runtime (_OpenJDK 11_), build tools (_maven, gradle_), SCM (_git_) and utilities (_putty, curl, postman_, _IntelliJ community edition_) on the developer's Windows computer.
 
     contents of the`setup-jde.cmd`
 
     ```
     choco feature enable -n allowGlobalConfirmation
-
-    choco install jdk8
-    choco install maven
-    choco install gradle
-    choco install git.install
-    choco install putty.install
-    choco install curl
-    choco install postman
-    choco install intellijidea-community
+    
+    choco install -y openjdk maven gradle git atom putty curl postman  db-visualizer 7zip intellijidea-community
     ```
 
     ***Script execution start***
