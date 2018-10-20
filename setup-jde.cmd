@@ -1,11 +1,4 @@
 
 choco feature enable -n allowGlobalConfirmation
 
-choco install jdk8
-choco install maven
-choco install gradle
-choco install git.install
-choco install putty.install
-choco install curl
-choco install postman
-choco install intellijidea-community
+choco install -y openjdk maven gradle git atom putty curl postman  db-visualizer 7zip intellijidea-community cloudfoundry-cli
